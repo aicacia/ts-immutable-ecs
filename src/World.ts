@@ -249,7 +249,7 @@ export class World extends Record(
     entity: Entity,
     ...query: T
   ): IQueryResult<T> | undefined {
-    const components = this.components.get(query[0]);
+    const components = this.components.get(entity);
     if (components) {
       return runQuery(entity, components, query);
     } else {
