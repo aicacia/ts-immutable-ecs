@@ -1,10 +1,14 @@
 let ENTITY_ID = 0;
 
+export function nextEntityId() {
+  return ENTITY_ID++;
+}
+
 export class Entity {
   protected id: number;
 
   constructor(id?: number) {
-    this.id = id || ENTITY_ID++;
+    this.id = id == undefined ? nextEntityId() : id;
   }
 
   getId() {

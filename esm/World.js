@@ -190,7 +190,7 @@ export class World extends Record({
         }
     }
     queryOne(entity, ...query) {
-        const components = this.components.get(query[0]);
+        const components = this.components.get(entity);
         if (components) {
             return runQuery(entity, components, query);
         }

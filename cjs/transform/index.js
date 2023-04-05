@@ -1,9 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.transformSystem = exports.transformPlugin = exports.GlobalTransform = exports.LocalTransform = void 0;
+exports.transformSystem = exports.transformPlugin = exports.GlobalTransform3D = exports.GlobalTransform2D = exports.Transform2D = exports.Transform3D = void 0;
 var components_1 = require("./components");
-Object.defineProperty(exports, "LocalTransform", { enumerable: true, get: function () { return components_1.LocalTransform; } });
-Object.defineProperty(exports, "GlobalTransform", { enumerable: true, get: function () { return components_1.GlobalTransform; } });
+Object.defineProperty(exports, "Transform3D", { enumerable: true, get: function () { return components_1.Transform3D; } });
+Object.defineProperty(exports, "Transform2D", { enumerable: true, get: function () { return components_1.Transform2D; } });
+Object.defineProperty(exports, "GlobalTransform2D", { enumerable: true, get: function () { return components_1.GlobalTransform2D; } });
+Object.defineProperty(exports, "GlobalTransform3D", { enumerable: true, get: function () { return components_1.GlobalTransform3D; } });
 var plugins_1 = require("./plugins");
 Object.defineProperty(exports, "transformPlugin", { enumerable: true, get: function () { return plugins_1.transformPlugin; } });
 var systems_1 = require("./systems");

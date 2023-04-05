@@ -38,7 +38,7 @@ function optional(optional) {
     return { optional };
 }
 exports.optional = optional;
-function oneOf(oneOf) {
+function oneOf(...oneOf) {
     return { oneOf };
 }
 exports.oneOf = oneOf;

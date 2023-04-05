@@ -5,5 +5,5 @@ export { Entity } from "./Entity";
 export { EntityBuilder } from "./EntityBuilder";
 export { ResourceClassManager } from "./ResourceClassManager";
 export { ResourceManager } from "./ResourceManager";
-export { World, CoreStage } from "./World";
+export { World, CoreStage, type IWorldFn } from "./World";
 export { oneOf, changed, without, optional } from "./Query";

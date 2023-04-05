@@ -193,7 +193,7 @@ class World extends (0, immutable_1.Record)({
         }
     }
     queryOne(entity, ...query) {
-        const components = this.components.get(query[0]);
+        const components = this.components.get(entity);
         if (components) {
             return (0, Query_1.runQuery)(entity, components, query);
         }

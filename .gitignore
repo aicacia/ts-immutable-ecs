@@ -4,7 +4,7 @@ dist/
 node_modules/
 coverage/
 docs/
-types/
+# types/
 # browser/
 # cjs/
 # esm/

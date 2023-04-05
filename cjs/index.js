@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.optional = exports.without = exports.changed = exports.oneOf = exports.CoreStage = exports.World = exports.ResourceManager = exports.ResourceClassManager = exports.EntityBuilder = exports.Entity = exports.parentUpdateSystem = exports.removeChildren = exports.hierarchyPlugin = exports.PreviousParent = exports.Parent = exports.Children = void 0;
+exports.optional = exports.without = exports.changed = exports.oneOf = exports.CoreStage = exports.World = exports.ResourceManager = exports.ResourceClassManager = exports.EntityBuilder = exports.Entity = exports.transformSystem = exports.transformPlugin = exports.GlobalTransform3D = exports.Transform3D = exports.Loop = exports.parentUpdateSystem = exports.removeChildren = exports.hierarchyPlugin = exports.PreviousParent = exports.Parent = exports.Children = void 0;
 var hierarchy_1 = require("./hierarchy");
 Object.defineProperty(exports, "Children", { enumerable: true, get: function () { return hierarchy_1.Children; } });
 Object.defineProperty(exports, "Parent", { enumerable: true, get: function () { return hierarchy_1.Parent; } });
@@ -8,6 +8,13 @@ Object.defineProperty(exports, "PreviousParent", { enumerable: true, get: functi
 Object.defineProperty(exports, "hierarchyPlugin", { enumerable: true, get: function () { return hierarchy_1.hierarchyPlugin; } });
 Object.defineProperty(exports, "removeChildren", { enumerable: true, get: function () { return hierarchy_1.removeChildren; } });
 Object.defineProperty(exports, "parentUpdateSystem", { enumerable: true, get: function () { return hierarchy_1.parentUpdateSystem; } });
+var loop_1 = require("./loop");
+Object.defineProperty(exports, "Loop", { enumerable: true, get: function () { return loop_1.Loop; } });
+var transform_1 = require("./transform");
+Object.defineProperty(exports, "Transform3D", { enumerable: true, get: function () { return transform_1.Transform3D; } });
+Object.defineProperty(exports, "GlobalTransform3D", { enumerable: true, get: function () { return transform_1.GlobalTransform3D; } });
+Object.defineProperty(exports, "transformPlugin", { enumerable: true, get: function () { return transform_1.transformPlugin; } });
+Object.defineProperty(exports, "transformSystem", { enumerable: true, get: function () { return transform_1.transformSystem; } });
 var Entity_1 = require("./Entity");
 Object.defineProperty(exports, "Entity", { enumerable: true, get: function () { return Entity_1.Entity; } });
 var EntityBuilder_1 = require("./EntityBuilder");

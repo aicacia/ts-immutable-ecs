@@ -26,7 +26,7 @@ export function without(without) {
 export function optional(optional) {
     return { optional };
 }
-export function oneOf(oneOf) {
+export function oneOf(...oneOf) {
     return { oneOf };
 }
 export function runQuery(entity, components, query) {

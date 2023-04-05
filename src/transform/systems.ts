@@ -10,7 +10,7 @@ import {
 } from "./components";
 import { changed, oneOf, without } from "../Query";
 
-export const syncSimpleTransforms = (world: World) => {
+export function syncSimpleTransforms(world: World) {
   for (const [entity, transform, globalTransform] of world.query(
     Entity,
     Transform3D,
@@ -41,14 +41,14 @@ export const syncSimpleTransforms = (world: World) => {
     );
   }
   return world;
-};
+}
 
 const MAT2D_0 = mat2d.create();
 const MAT2D_1 = mat2d.create();
 const MAT4_0 = mat4.create();
 const MAT4_1 = mat4.create();
 
-export const transformSystem = (world: World) => {
+export function transformSystem(world: World) {
   for (const [
     entity,
     transform,
@@ -100,7 +100,7 @@ export const transformSystem = (world: World) => {
   }
 
   return world;
-};
+}
 
 function propagateRecursive(
   world: World,
